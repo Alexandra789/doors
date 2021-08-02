@@ -60,6 +60,13 @@ const config = {
             },
           },
           {
+            loader: "style-loader",
+            options: {
+              sourceMap: true,
+              url: false,
+            },
+          },
+          {
             loader: "sass-loader",
             options: {
               sourceMap: true,
