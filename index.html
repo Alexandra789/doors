@@ -8,9 +8,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./build/css/style.bundle.css">
     <title>Main</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <nav class="navigation">
+                    <div class="menu menu-top">
+                        <ul class="menu-list">
+                            <li class="menu-list__item menu-list__item-top">
+                                <input type="text" class="search-input" placeholder="Поиск">
+                            </li>
+                            <li class="menu-list__item menu-list__item-top"><a href="">Главная</a></li>
+                            <li class="menu-list__item menu-list__item-top"><a href="">О нас</a></li>
+                            <li class="menu-list__item menu-list__item-top"><a href="">Наши работы</a></li>
+                            <li class="menu-list__item menu-list__item-top"><a href="">Доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu menu-bottom">
+                        <ul class="menu-list">
+                            <li class="menu-list__item menu-list__item-bottom"><a href="">Каталог</a></li>
+                            <li class="menu-list__item menu-list__item-bottom"><a href="">Комплектующие</a></li>
+                            <li class="menu-list__item menu-list__item-bottom"><a href="">Варианты отделки</a></li>
+                            <li class="menu-list__item menu-list__item-bottom"><a href="">Доставка и оплата</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="contact-information">
+                    <div class="logo-wrapper">
+                        <img src="./assets/images/logo.png" alt="logo" class="logo">
+                        <h1 class="title header__title">Новые двери</h1>
+                    </div>
+                    <a href="tel:+74957228935" class="phone">+7<span></span>495<span></span>722<span></span>89<span></span>35</a>
+                    <div class="wrap">
+                        <p class="wrap__text address">Москва, Краснопресненская наб., д. 12, под. 6, 123610 </p>
+                        <a class="wrap__link">Схема проезда</a>
+                    </div>
+                    <div class="row">
+                        <div class="schedule-wrap">
+                            <p class="schedule">
+                                График работы:
+                                </br><span>пн-сб</span> 10:00-21:00
+                                </br><span>вс</span> 10:00-19:00
+                            </p>
+                        </div>
+                        <div class="wrap">
+                            <p class="wrap__text address">sale@test.ru</p>
+                            <a class="wrap__link">Напишите нам</a>
+                        </div>
+                    </div>
+                    <a href="" class="button contact-information__button">Вызвать замерщика</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section class="slider">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <h2 class="slider__title">Рекомендуем</h2>
+                        <p class="slider__subtitle">Межкомнатные двери <br><span>со скидкой 15%</span></p>
+                        <button href="" class="button slider__button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <h2 class="slider__title">Рекомендуем</h2>
+                        <p class="slider__subtitle">Межкомнатные двери <br><span>со скидкой 15%</span></p>
+                        <button href="" class="button slider__button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <h2 class="slider__title">Рекомендуем</h2>
+                        <p class="slider__subtitle">Межкомнатные двери <br><span>со скидкой 15%</span></p>
+                        <button href="" class="button slider__button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <h2 class="slider__title">Рекомендуем</h2>
+                        <p class="slider__subtitle">Межкомнатные двери <br><span>со скидкой 15%</span></p>
+                        <button href="" class="button slider__button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <h2 class="slider__title">Рекомендуем</h2>
+                        <p class="slider__subtitle">Межкомнатные двери <br><span>со скидкой 15%</span></p>
+                        <button href="" class="button slider__button">Смотреть</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>
