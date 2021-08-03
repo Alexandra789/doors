@@ -58,9 +58,9 @@ a{
           height: 20px;
           width: 250px;
           padding: 15px;
-          background: none;
           outline: none;
-
+          background: url("../../assets/images/Search.svg") no-repeat center right;
+          background-position-x: 215px;
           &::placeholder {
             color: #FFFFFF;
           }
