@@ -66,7 +66,7 @@
             </div>
         </div>
         <section class="slider">
-            <div class="swiper-container mySwiper">
+            <div class="swiper-container swiper-header">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-content">
@@ -145,43 +145,51 @@
                     <div class="wrap">
                         <h2 class="title title-for-apartment">Популярные для квартиры</h2>
                         <div class="arrows-wrapper">
-                            <img src="./assets/images/arrow-left-circle.svg" class="left" alt="img">
-                            <img src="./assets/images/arrow-right-circle.svg" class="right" alt="img">
+                            <img src="./assets/images/arrow-left-circle.svg" class="left swiper-apartment-left" alt="img">
+                            <img src="./assets/images/arrow-right-circle.svg" class="right swiper-apartment-right" alt="img">
                         </div>
                     </div>
-                    <div class="doors-wrapper">
-                        <div class="door">
-                            <div class="img-wrapper">
-                                <a href="" class="door__view">Быстрый просмотр</a>
-                                <img src="./assets/images/door-1.png" class="door__img" alt="img">
-                            </div>
-                            <div class="stars-wrapper">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                            </div>
-                            <p class="door__name">Дверь “Элитная №2”</p>
-                            <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
-                            <a href="" class="buy-link">Купить в 1 клик</a>
-                        </div>
-                        <div class="door">
-                            <div class="img-wrapper">
-                                <a href="" class="door__view">Быстрый просмотр</a>
-                                <img src="./assets/images/door-2.png" class="door__img" alt="img">
-                            </div>
-                            <div class="stars-wrapper">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                            </div>
-                            <p class="door__name">Дверь “Элитная №3”</p>
-                            <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
-                            <a href="" class="buy-link">Купить в 1 клик</a>
+                    <div class="slider-door">
+                        <div class="swiper-container swiper-apartment">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="door">
+                                        <div class="img-wrapper">
+                                            <a href="" class="door__view">Быстрый просмотр</a>
+                                            <img src="./assets/images/door-1.png" class="door__img" alt="img">
+                                        </div>
+                                        <div class="stars-wrapper">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                        </div>
+                                        <p class="door__name">Дверь “Элитная №2”</p>
+                                        <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
+                                        <a href="" class="buy-link">Купить в 1 клик</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="door">
+                                        <div class="img-wrapper">
+                                            <a href="" class="door__view">Быстрый просмотр</a>
+                                            <img src="./assets/images/door-2.png" class="door__img" alt="img">
+                                        </div>
+                                        <div class="stars-wrapper">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                        </div>
+                                        <p class="door__name">Дверь “Элитная №3”</p>
+                                        <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
+                                        <a href="" class="buy-link">Купить в 1 клик</a>
 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="price-wrapper">
@@ -192,45 +200,52 @@
                 </div>
                 <div class="popular-for-home">
                     <div class="wrap">
-                        <h2 class="title">Популярные для дома</h2>
+                        <h2 class="title title-for-home">Популярные для дома</h2>
                         <div class="arrows-wrapper">
-                            <img src="./assets/images/arrow-left-circle.svg" class="left" alt="img">
-                            <img src="./assets/images/arrow-right-circle.svg" class="right" alt="img">
+                            <img src="./assets/images/arrow-left-circle.svg" class="left swiper-home-left" alt="img">
+                            <img src="./assets/images/arrow-right-circle.svg" class="right swiper-home-right" alt="img">
                         </div>
                     </div>
-                    <div class="doors-wrapper">
-                        <div class="door">
-                            <div class="img-wrapper">
-                                <a href="" class="door__view">Быстрый просмотр</a>
-                                <img src="./assets/images/door-3.png" class="door__img" alt="img">
+                    <div class="slider-door">
+                        <div class="swiper-container swiper-home">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="door">
+                                        <div class="img-wrapper">
+                                            <a href="" class="door__view">Быстрый просмотр</a>
+                                            <img src="./assets/images/door-3.png" class="door__img" alt="img">
+                                        </div>
+                                        <div class="stars-wrapper">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                        </div>
+                                        <p class="door__name">Дверь “Элитная №2”</p>
+                                        <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
+                                        <a href="" class="buy-link">Купить в 1 клик</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="door">
+                                        <div class="img-wrapper">
+                                            <a href="" class="door__view">Быстрый просмотр</a>
+                                            <img src="./assets/images/door-4.png" class="door__img" alt="img">
+                                        </div>
+                                        <div class="stars-wrapper">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                            <img src="./assets/images/white-star.svg" alt="img" class="white-star">
+                                        </div>
+                                        <p class="door__name">Дверь “Элитная №2”</p>
+                                        <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
+                                        <a href="" class="buy-link">Купить в 1 клик</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="stars-wrapper">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                            </div>
-                            <p class="door__name">Дверь “Элитная №2”</p>
-                            <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
-                            <a href="" class="buy-link">Купить в 1 клик</a>
-                        </div>
-                        <div class="door">
-                            <div class="img-wrapper">
-                                <a href="" class="door__view">Быстрый просмотр</a>
-                                <img src="./assets/images/door-4.png" class="door__img" alt="img">
-                            </div>
-                            <div class="stars-wrapper">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/black-star.svg" alt="img" class="black-stars">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                                <img src="./assets/images/white-star.svg" alt="img" class="white-star">
-                            </div>
-                            <p class="door__name">Дверь “Элитная №2”</p>
-                            <p class="door__price">35 550<img src="./assets/images/ruble.svg" alt="img" class="ruble"></p>
-                            <a href="" class="buy-link">Купить в 1 клик</a>
-
                         </div>
                     </div>
                     <div class="price-wrapper">
@@ -240,7 +255,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
