@@ -1,7 +1,5 @@
 .about-us {
   .about-us-wrapper {
-
-    //padding-left: 155px;
     background-color: #1C222A;
     display: flex;
 
@@ -17,11 +15,6 @@
         text-align: center;
         margin-right: 31px;
         margin-bottom: 35px;
-        //&::before{
-        //  content: url("../../assets/images/check-square.svg");
-        //  width: 10px;
-        //  height: 10px;
-        //}
         &:last-child,&:nth-child(2){
           margin-right: 0;
         }
@@ -34,6 +27,7 @@
           position: relative;
           bottom: 40px;
           padding: 0px 50px;
+          height: 75px;
         }
 
         .text {
