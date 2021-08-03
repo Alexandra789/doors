@@ -59,13 +59,13 @@ const config = {
               url: false,
             },
           },
-          {
-            loader: "style-loader",
-            options: {
-              sourceMap: true,
-              url: false,
-            },
-          },
+          // {
+          //   loader: "style-loader",
+          //   options: {
+          //     sourceMap: true,
+          //     url: false,
+          //   },
+          // },
           {
             loader: "sass-loader",
             options: {
