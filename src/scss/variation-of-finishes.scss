@@ -204,6 +204,9 @@
     top: -10px;
     outline: none;
     background-color: #edb021 !important;
+    &:hover{
+      cursor: pointer;
+    }
     &:first-child{
       width: 14px !important;
       height: 14px !important;
