@@ -1,3 +1,5 @@
+// import noUiSlider from 'nouislider';
+
 import Swiper from 'swiper';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
@@ -33,6 +35,14 @@ const swiperPopularSectionSecond = new Swiper('.swiper-home', {
     },
 });
 
+$( function() {
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 75, 300 ],
+    });
+} );
 
 let textSwiper = document.querySelectorAll('.slider__subtitle');
 
