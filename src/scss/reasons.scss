@@ -1,0 +1,41 @@
+.reasons{
+  background: #1C222A;
+  .reasons-wrapper{
+    padding: 55px 0;
+    .reasons__title{
+      text-align: center;
+      margin-bottom: 80px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    .reasons-block-wrapper{
+      display: flex;
+      justify-content: space-between;
+      .reason{
+        max-width: 150px;
+        &__title{
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 23px;
+          overflow-wrap: break-word;
+          text-align: center;
+        }
+        .img-wrapper{
+          width: 136px;
+          height: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #edb021;
+          border-radius: 50%;
+          margin-bottom: 30px;
+          img{}
+        }
+      }
+    }
+  }
+}
