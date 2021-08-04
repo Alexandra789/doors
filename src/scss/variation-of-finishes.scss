@@ -1,0 +1,170 @@
+.variation-of-finishes {
+  background: #6A655D;
+
+  .variation-of-finishes-wrapper {
+    padding-top: 60px;
+    padding-bottom: 18px;
+    display: flex;
+
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    .bestseller, .selection-of-doors {
+      width: 560px;
+      height: 566px;
+
+    }
+
+    .bestseller {
+      padding-top: 25px;
+      padding-bottom: 40px;
+      color: white;
+      margin-right: 20px;
+      background-image: url("../../assets/images/background-img-2.png");
+
+      &__title {
+      }
+
+      .door {
+        .img-wrapper{
+          .door__img-discount{
+            position: absolute;
+            right: 140px;
+            top: 8px;
+            z-index: 1;
+          }
+        }
+        &__name {
+          margin-top: 10px;
+          font-size: 16px;
+          line-height: 19px
+        }
+
+        &__price {
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        .ruble {
+          width: 18px;
+          height: 18px;
+        }
+
+        .stars-wrapper {
+          bottom: 15px;
+
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+
+    .selection-of-doors {
+      padding-top: 27px;
+      padding-bottom: 28px;
+      background-image: url("../../assets/images/background-img-3.png");
+
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+
+      &__title {
+        margin-bottom: 30px;
+      }
+
+      &__button {
+        font-family: 'Roboto';
+        background: #FFFFFF;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+      }
+
+      .colors{
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .wrap {
+        display: flex;
+
+        &-top {
+          margin-bottom: 10px;
+
+          .button {
+            width: 124px;
+            height: 41px;
+            margin-right: 8px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        &-bottom {
+          &:last-child {
+            margin-bottom: 5px;
+          }
+
+          .button {
+            width: 167px;
+            height: 34px;
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        &-color {
+          .color {
+            cursor: pointer;
+            margin-right: 17.5px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .buttons-wrapper {
+        display: flex;
+        margin-top: 28px;
+        .button {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          color: white;
+          border: none;
+        }
+
+        .button-apply {
+          width: 173px;
+          height: 38px;
+          margin-right: 10px;
+        }
+
+        .button-reset {
+          background: none;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+}
