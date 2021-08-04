@@ -2,6 +2,8 @@
 @import "slider";
 @import "about-us";
 @import "popular";
+@import "variation-of-finishes";
+@import "reasons";
 
 *{
   box-sizing: border-box;
@@ -17,6 +19,7 @@ body{
   background: #EDB021;
   border-radius: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 a{
@@ -28,4 +31,44 @@ a{
   margin: 0 auto;
   padding: 0px 15px;
   max-width: 1170px;
+}
+
+.door {
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .img-wrapper {
+    height: 326px;
+    position: relative;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+    height: 326px;
+  }
+
+  &__name {
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  &__price {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  .stars-wrapper {
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 13px;
+      height: 13px;
+    }
+  }
 }
