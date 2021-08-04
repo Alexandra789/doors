@@ -4,9 +4,20 @@
     display: flex;
     padding-top: 70px;
     padding-bottom: 60px;
-
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .popular-for-apartment {
       margin-right: 20px;
+      @media (max-width: 1168px) {
+        //margin-right: 0;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 1148px) {
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
     }
 
     .popular-for-apartment, .popular-for-home {
@@ -53,7 +64,7 @@
 
         .arrows-wrapper {
           margin-top: 14px;
-          margin-left: 108px;
+          margin-left: 105px;
 
           .left, .right {
             cursor: pointer;
@@ -68,7 +79,10 @@
       .door {
         width: 212.5px;
         margin-right: 50px;
-        text-align: center;
+
+        .stars-wrapper{
+          bottom: 32px;
+        }
 
         &:hover {
           .door__view {
@@ -88,17 +102,6 @@
           margin-right: 0;
         }
 
-        .img-wrapper {
-          height: 326px;
-          position: relative;
-        }
-
-        &__img {
-          position: relative;
-          z-index: 1;
-          height: 326px;
-        }
-
         &__name {
           margin-top: -20px;
           font-size: 14px;
@@ -110,9 +113,7 @@
         &__price {
           margin: 10px 0;
           font-size: 16px;
-          font-weight: 400;
           line-height: 19px;
-          letter-spacing: 0.05em;
         }
 
         &__view {
@@ -137,17 +138,6 @@
           line-height: 16px;
           visibility: hidden;
         }
-
-        .stars-wrapper {
-          position: relative;
-          bottom: 32px;
-          z-index: 2;
-
-          img {
-            width: 13px;
-            height: 13px;
-          }
-        }
       }
     }
 
@@ -155,6 +145,7 @@
       display: flex;
       justify-content: center;
       margin-top: 15px;
+
 
       .price {
         font-size: 12px;
