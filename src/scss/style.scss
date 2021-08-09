@@ -79,3 +79,16 @@ a{
     }
   }
 }
+
+.arrows-wrapper{
+  display: flex;
+  .arrow{
+    border: 1px solid #edb021;
+    border-radius: 50%;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+}
