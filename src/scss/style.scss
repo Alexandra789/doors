@@ -4,6 +4,9 @@
 @import "popular";
 @import "variation-of-finishes";
 @import "reasons";
+@import "contacts";
+@import "helpful-information";
+@import "footer";
 
 *{
   box-sizing: border-box;
@@ -29,8 +32,12 @@ a{
 
 .container{
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0 15px;
   max-width: 1170px;
+}
+
+.left,.right{
+  cursor: pointer;
 }
 
 .door {
