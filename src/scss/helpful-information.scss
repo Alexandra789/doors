@@ -1,14 +1,17 @@
-.helpful-information{
+.helpful-information {
   background: #1C222A;
+
   .helpful-information-wrapper {
     padding-top: 65px;
     padding-bottom: 40px;
+
     .slider-container {
       border-radius: 20px;
       padding: 40px 97px;
       border: 2px solid #edb021;
       position: relative;
       z-index: 1;
+
       .wrap {
         margin-left: 45px;
         background: #1C222A;
@@ -17,6 +20,10 @@
         bottom: 70px;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 623px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
         .arrows-wrapper {
           display: flex;
           position: relative;
@@ -26,10 +33,11 @@
           .arrow {
             margin-right: 20px;
 
-            &:hover{
+            &:hover {
               background: #edb021;
               color: white;
-              img{
+
+              img {
                 filter: brightness(10.5);
               }
             }
@@ -47,16 +55,17 @@
         align-items: center;
         margin-right: 20px;
         height: 260px;
+        width: auto;
 
-        .img{
+        .img {
           position: relative;
           z-index: 2;
         }
 
         .text-wrapper {
           padding: 29px 26px 22px 57px;
-          position: relative;
-          right: 60px;
+          position: absolute;
+          left: 155px;
           width: 330px;
           height: 217px;
           background: #edb021;
@@ -103,14 +112,22 @@
       }
     }
   }
-  .swiper-container{
+
+  .swiper-container {
     bottom: 25px;
-    .swiper-wrapper{
+
+    .swiper-wrapper {
       justify-content: center;
+
+      .swiper-slide {
+        //margin-right: 28px;
+        //width: 500px !important;
+      }
     }
   }
-  .arrows-wrapper{
-    .arrow{
+
+  .arrows-wrapper {
+    .arrow {
       border: 1px solid #edb021;
       border-radius: 50%;
       display: flex;
@@ -121,7 +138,7 @@
     }
   }
 
-  &__title{
+  &__title {
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
@@ -129,13 +146,36 @@
     text-transform: uppercase;
     color: white;
     padding: 0 45px;
-    &::after{
+
+    &::after {
       border-top: 2px solid #edb021;
       content: "";
       width: 405px;
       top: 30px;
       margin-left: 45px;
       position: absolute;
+
+    }
+
+    @media (max-width: 1165px) {
+      &::after {
+        width: 350px;
+      }
+    }
+    @media (max-width: 1100px) {
+      &::after {
+        width: 300px;
+      }
+    }
+    @media (max-width: 995px) {
+      &::after {
+        width: 200px;
+      }
+    }
+    @media (max-width: 623px) {
+      &::after{
+        border: none;
+      }
     }
   }
 }

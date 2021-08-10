@@ -3,14 +3,18 @@
   position: relative;
   background: linear-gradient(180deg, #6A655D 26.56%, rgba(106, 101, 93, 0.35) 91.15%),
   linear-gradient(270deg, #6A655D 0%, rgba(106, 101, 93, 0.95) 54.79%, rgba(196, 196, 196, 0) 100%);
+  @media (max-width:1128px) {
+    height: 1020px;
+  }
   .container,&-wrapper,.contact-information{
     height: 100%;
   }
   &-wrapper {
     display: flex;
-    @media (max-width:1200px) {
-      flex-wrap: wrap;
-      justify-content: center;
+    @media (max-width:1128px) {
+      display: block;
+      //flex-wrap: wrap;
+      //justify-content: center;
     }
 
     .navigation {
@@ -51,6 +55,12 @@
           &__item {
             cursor: pointer;
             margin-right: 35px;
+            @media (max-width: 1200px) {
+              margin-right: 25px;
+            }
+            @media (max-width: 1127px) {
+              margin-right: 18px;
+            }
             &-top {
               font-size: 14px;
               font-weight: 400;
@@ -93,7 +103,11 @@
       padding: 30px 64px 44px;
       text-align: center;
       max-width: 463px;
-
+      @media (max-width:1128px) {
+        height: auto;
+       max-width: 100%;
+        text-align-last: center;
+      }
       .logo-wrapper {
         display: flex;
         justify-content: center;
@@ -102,6 +116,9 @@
         .logo {
           width: 100px;
           height: 100px;
+          @media (max-width:1128px) {
+            margin-right: 15px;
+          }
         }
 
         .title {
@@ -155,6 +172,9 @@
         justify-content: space-between;
         margin-bottom: 45px;
         margin-top: 25px;
+        @media (max-width:1128px) {
+          justify-content: center;
+        }
 
         .schedule {
           font-size: 16px;
@@ -163,6 +183,9 @@
           letter-spacing: 0.05em;
           text-align: left;
           margin: 0;
+          @media (max-width:1128px) {
+            margin-right: 15px;
+          }
 
           span {
             text-transform: uppercase;
