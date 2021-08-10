@@ -5,6 +5,6 @@ const swiperHelpfulInformation = new Swiper('.swiper-helpful-information', {
     slidesPerView: 2,
     navigation: {
         nextEl: '.swiper-helpful-information-right',
-        prevEl: '.swiper--helpful-information-left',
+        prevEl: '.swiper-helpful-information-left',
     },
 });
