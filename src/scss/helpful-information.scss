@@ -11,6 +11,9 @@
       border: 2px solid #edb021;
       position: relative;
       z-index: 1;
+      @media (max-width: 570px) {
+        border: none;
+      }
 
       .wrap {
         margin-left: 45px;
@@ -24,6 +27,7 @@
           flex-wrap: wrap;
           justify-content: center;
         }
+
         .arrows-wrapper {
           display: flex;
           position: relative;
@@ -173,7 +177,7 @@
       }
     }
     @media (max-width: 623px) {
-      &::after{
+      &::after {
         border: none;
       }
     }
