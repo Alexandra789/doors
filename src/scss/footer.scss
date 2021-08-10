@@ -1,7 +1,8 @@
-.footer{
+.footer {
   background-color: #edb021;
   padding-top: 56px;
   padding-bottom: 30px;
+
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
@@ -9,6 +10,7 @@
     @media (max-width: 992px) {
       flex-wrap: wrap;
     }
+
     .wrap {
       .footer__text {
         font-size: 20px;
@@ -17,46 +19,54 @@
         color: #1C222A;
         display: block;
         margin-bottom: 20px;
-        &-last{
+
+        &-last {
           margin-bottom: 0;
         }
-        &:hover{
+
+        &:not(.footer__text-last):hover {
           color: #DCDCDC;
         }
       }
     }
-    .cards-wrapper{
+
+    .cards-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-around;
     }
-    .social-icons-wrapper{
+
+    .social-icons-wrapper {
       display: flex;
       justify-content: space-around;
-      a{
-        &:hover{
+
+      a {
+        &:hover {
           filter: invert(1);
         }
       }
-      .telegram{
-          filter: invert(1);
+
+      .telegram {
+        filter: invert(1);
       }
     }
   }
 
-  .wrap-bottom{
+  .wrap-bottom {
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 50px;
-    p{
+    flex-wrap: wrap;
+
+    p {
       color: #6A655D;
       font-size: 16px;
-      margin-right: 20px;
       font-weight: 300;
       line-height: 19px;
     }
-    a{
+
+    a {
       color: #DCDCDC;
       font-size: 16px;
       font-weight: 300;

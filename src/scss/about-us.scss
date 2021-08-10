@@ -6,39 +6,51 @@
     .blocks-wrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
       padding: 100px 0 100px 190px;
+      @media (max-width: 763px) {
+        padding-bottom: 100px !important;
+      }
       @media (max-width: 992px) {
         padding: 100px 0 0 0;
         justify-content: center;
       }
-
-      @media (max-width: 780px) {
-        padding-bottom: 100px;
+      @media (max-width: 380px) {
+        padding-bottom: 0 !important;
       }
+
       .block {
         width: 366px;
         height: 206px;
         border: 1px solid #edb021;
         border-radius: 20px;
         text-align: center;
-        margin-right: 31px;
         margin-bottom: 35px;
-        @media (max-width: 780px) {
+
+        &:last-child, &:nth-child(2) {
           margin-right: 0;
         }
-        &:last-child,&:nth-child(2){
-          margin-right: 0;
-        }
-        &:last-child,&:nth-child(3){
+
+        &:last-child, &:nth-child(3) {
           margin-bottom: 0;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
           @media (max-width: 1200px) {
             margin-bottom: 65px;
           }
         }
-        @media (max-width: 1200px) {
+
+        @media (max-width: 1425px) {
           margin-bottom: 65px;
+          &:nth-child(3) {
+            margin-bottom: 65px;
+          }
+        }
+        @media (max-width: 380px) {
+          border: none;
+          width: auto;
+          padding: 0 15px;
         }
 
         .img {
@@ -47,9 +59,6 @@
           bottom: 40px;
           padding: 0 50px;
           height: 76px;
-          //@media (max-width: 1200px) {
-          //  display: none;
-          //}
         }
 
         .text {
@@ -59,10 +68,16 @@
           font-size: 22px;
           font-weight: 400;
           line-height: 26px;
+          @media (max-width: 380px) {
+            width: auto;
+          }
         }
 
         &-white {
           border: 1px solid white;
+          @media (max-width: 380px) {
+            border: none;
+          }
 
           .text {
             font-size: 16px;
@@ -70,11 +85,15 @@
             line-height: 19px;
             text-align: left;
             color: white;
+            @media (max-width: 380px) {
+              text-align: center;
+            }
           }
         }
       }
     }
-    .right-img{
+
+    .right-img {
       padding-top: 47px;
       padding-bottom: 95px;
       object-fit: cover;

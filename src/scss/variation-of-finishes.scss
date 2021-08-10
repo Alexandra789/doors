@@ -5,7 +5,7 @@
     padding-top: 60px;
     padding-bottom: 18px;
     display: flex;
-    @media (max-width: 992px) {
+    @media (max-width: 1095px) {
       flex-wrap: wrap;
     }
 
@@ -22,7 +22,11 @@
     .bestseller, .selection-of-doors {
       width: 560px;
       height: 566px;
-      @media (max-width: 992px) {
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @media (max-width: 1095px) {
         width: 100%;
       }
     }
@@ -33,7 +37,7 @@
       color: white;
       margin-right: 20px;
       background-image: url("../../assets/images/background-img-2.png");
-      @media (max-width: 992px) {
+      @media (max-width: 1095px) {
         margin-right: 0;
         margin-bottom: 50px;
       }
@@ -44,9 +48,9 @@
       .door {
         .img-wrapper{
           .door__img-discount{
-            position: absolute;
-            right: 140px;
-            top: 8px;
+            position: relative;
+            right: 9%;
+            bottom: 75%;
             z-index: 1;
           }
         }
@@ -80,22 +84,19 @@
       padding-top: 27px;
       padding-bottom: 28px;
       background-image: url("../../assets/images/background-img-3.png");
-      background-repeat: no-repeat;
-      object-fit: cover;
-      background-position: center;
+      @media (max-width: 1095px) {
+        height: auto;
+        padding: 28px 20px;
+      }
 
-      justify-content: center;
-      display: flex;
-      flex-wrap: wrap;
+      .content-wrapper{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
 
       &__title {
         margin-bottom: 20px;
-      }
-
-      radio:checked {
-        //margin-left: 25px;
-        border: 2px solid red;
-        background-color: fuchsia;
       }
 
       &__button {
@@ -149,10 +150,20 @@
           &:last-child {
             margin-right: 0;
           }
+
+          @media (max-width: 1095px) {
+            &:last-child {
+              margin-right: 8px;
+            }
+          }
+
           .button {
             width: 124px;
             height: 41px;
-
+            @media (max-width: 334px) {
+              width: 167px;
+              height: 34px;
+            }
           }
         }
 
@@ -162,6 +173,11 @@
 
           &:nth-child(3n) {
             margin-right: 0;
+          }
+          @media (max-width: 1095px) {
+            &:nth-child(3n) {
+              margin-right: 10px;
+            }
           }
           .button {
             width: 167px;
@@ -176,6 +192,11 @@
 
           &:nth-child(8n){
             margin-right: 0;
+          }
+          @media (max-width: 1095px) {
+            &:nth-child(8n) {
+              margin-right: 17.5px;
+            }
           }
           .color {
             cursor: pointer;
@@ -224,45 +245,53 @@
   @media(max-width: 993px) {
     justify-content: center;
   }
-  #slider-range{
+
+  #slider-range {
     top: -3px;
     width: 318px;
     @media(max-width: 993px) {
       margin: 0 15px;
     }
   }
-  p{
+
+  p {
     color: white;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
   }
+
   .ui-slider-horizontal {
     height: 0.1px;
   }
-  .ui-widget.ui-widget-content{
-    border:0.1px solid white;
+
+  .ui-widget.ui-widget-content {
+    border: 0.1px solid white;
   }
 
   ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
     border-radius: 50%;
   }
+
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
-  .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+  .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     border-radius: 50%;
     border: none;
     top: -10px;
     outline: none;
     background-color: #edb021 !important;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
-    &:first-child{
+
+    &:first-child {
       width: 14px !important;
       height: 14px !important;
     }
   }
-  ui-slider-range,.ui-corner-all,.ui-widget-header{
+
+  ui-slider-range, .ui-corner-all, .ui-widget-header {
     top: -1px;
     border: 2px solid #edb021;
     background: #edb021;
