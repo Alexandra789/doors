@@ -52,6 +52,10 @@
             right: 9%;
             bottom: 75%;
             z-index: 1;
+            @media (max-width: 327px) {
+              bottom: 97%;
+              right: -36%;
+            }
           }
         }
         &__name {

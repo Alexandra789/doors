@@ -27,6 +27,7 @@
       padding: 0 40px 15px;
       @media (max-width: 580px) {
         border: none;
+        padding: 0 0 15px;
       }
 
       .wrap {
@@ -43,6 +44,7 @@
         }
         @media (max-width: 570px) {
           margin-right: 0;
+          //margin-left: 27%;
         }
 
         .title {
@@ -52,6 +54,9 @@
           font-weight: 400;
           line-height: 23px;
           letter-spacing: 0.1em;
+          @media (max-width: 540px) {
+            font-size: 15px;
+          }
 
           &:after {
             border-top: 2px solid #edb021;
@@ -72,9 +77,9 @@
 
         .title-for-apartment {
           margin-right: -43px;
-          @media (max-width: 570px) {
-            margin-right: 20px;
-          }
+          //@media (max-width: 570px) {
+          //  margin-right: 0px;
+          //}
 
           &:after {
             margin-left: 11px;
@@ -87,6 +92,9 @@
           margin-left: 105px;
           @media (max-width: 570px) {
             margin-left: 0;
+            margin-right: 60%;
+            position: relative;
+            left: 35%;
           }
 
           .arrow {
@@ -206,5 +214,13 @@
   .slider-door {
     height: 419px;
     width: 475px;
+    @media (max-width: 540px) {
+      width: 280px;
+    }
+  }
+  .swiper-slide{
+    @media (max-width: 540px) {
+      padding-left: 15%;
+    }
   }
 }
