@@ -68,6 +68,18 @@
         &:hover{
           cursor: pointer;
         }
+        @media (max-width: 895px) {
+          margin-right: 160px;
+        }
+        @media (max-width: 800px) {
+          margin-right: 125px;
+        }
+        @media (max-width: 720px) {
+          margin-right: 110px;
+        }
+        @media (max-width: 670px) {
+          margin-right: 45px;
+        }
         @media (max-width: 560px) {
           margin-right: 120px;
         }
