@@ -203,6 +203,11 @@
         width: 300px;
       }
     }
+    @media (max-width: 1046px) {
+      &::after {
+        width: 265px;
+      }
+    }
     @media (max-width: 995px) {
       &::after {
         width: 200px;
