@@ -212,6 +212,9 @@
   .slider-door {
     height: 419px;
     width: 475px;
+    &:hover{
+      cursor: pointer;
+    }
     @media (max-width: 540px) {
       width: 280px;
     }
